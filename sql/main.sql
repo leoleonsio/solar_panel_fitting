@@ -135,6 +135,7 @@ select s.id, s.roof_id, to3d(s.geom, r.geometry) geom
 from solution_sample s
 inner join roofs r on r.id = s.roof_id;
 
+
 -- full run for all the rooftops - takes 5 minutes on my pc
 -- drop table if exists solution3d;
 -- create table solution3d as
